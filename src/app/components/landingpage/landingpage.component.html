@@ -25,7 +25,7 @@
                     </div>
                     <div class="col-span-5 sm:col-span-4 md:col-span-3 justify-center">
                         <button
-                            class="bg-[rgb(229,9,20)] hover:bg-[rgb(193,17,25) rounded-md px-4 py-3 sm:py-4 text-xl font-black text-white text-center inline-flex items-center">
+                            class="bg-[rgb(229,9,20)] hover:bg-[rgb(193,17,25)] rounded-md px-4 py-3 sm:py-4 text-xl font-black text-white text-center inline-flex items-center">
                             Get Started
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6">
@@ -403,3 +403,19 @@
 </div>
 
 <hr class="border-4 border-zinc-800">
+
+<footer class="p-7">
+    <div class="grid grid-cols-12 lg:px-10 xl:px-28 md:pt-8">
+        <div class="col-span-12 h-9 mb-3">
+            <p target="_blank" class="text-zinc-300 text-base underline cursor-pointer">Questions? Contact to us.</p>
+        </div>
+        @for (item of footer; track $index) {
+            <div class="col-span-6 lg:col-span-3 h-9">
+                <p target="_blank" class="text-zinc-300 text-sm underline cursor-pointer"> {{item}} </p>
+            </div>
+        }
+        <div class="col-span-12 h-9 pt-3">
+            <p target="_blank" class="text-zinc-300 text-base">Netflix Italy</p>
+        </div>
+    </div>
+</footer>
