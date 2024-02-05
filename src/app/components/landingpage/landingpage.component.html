@@ -2,7 +2,7 @@
     <div class="flex justify-between mx-auto p-6">
         <img src="../../../assets/img/Logonetflix.png" class="w-[89px] sm:w-[89px] lg:w-[148px]">
         <a routerLink="/login"
-            class="bg-[rgb(229,9,20)] hover:bg-[rgb(193,17,25)] rounded-md px-4 h-8 text-sm items-center flex text-white">Sign
+            class="bg-[rgb(229,9,20)] hover:bg-[rgb(193,17,25)] rounded px-4 h-8 text-sm items-center flex text-white">Sign
             In</a>
     </div>
 </nav>
@@ -19,10 +19,12 @@
                 <p class="text-white text-lg font-bold">Ready to watch? Enter your email to create or restart your
                     membership.</p>
                 <div class="grid sm:grid-cols-10 lg:px-32 gap-y-3 gap-x-[-30px] mt-4 text-center">
-                    <div class="col-span-5 sm:col-span-6 md:col-span-7 pr-3">
-                        <input type="email" placeholder="Email address"
-                            class="text-white w-full px-4 py-3 sm:py-4 text-base rounded-md border-slate-400 border-[0.1px] bg-neutral-900 bg-opacity-80 focus:ring-white focus:border-white placeholder:text-gray-300">
-                    </div>
+                    <div class="relative col-span-5 sm:col-span-6 md:col-span-7 pr-3">
+                        <input type="email" placeholder=" "
+                            class="text-white w-full px-4 py-3 sm:py-4 text-base rounded-md border-neutral-600 border-[0.1px] bg-neutral-900 bg-opacity-80 focus:ring-white focus:border-white placeholder:text-gray-300 peer">
+                            <label for="floating_filled" class="absolute text-base text-neutral-300 duration-300 transform -translate-y-4 scale-75 top-4 left-5 z-10 origin-[0] start-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Email address</label>
+
+                        </div>
                     <div class="col-span-5 sm:col-span-4 md:col-span-3 justify-center">
                         <button
                             class="bg-[rgb(229,9,20)] hover:bg-[rgb(193,17,25)] rounded-md px-4 py-3 sm:py-4 text-xl font-black text-white text-center inline-flex items-center">
