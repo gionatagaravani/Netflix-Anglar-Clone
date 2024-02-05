@@ -1,9 +1,9 @@
-<nav class="bg-transparent relative top-0 left-0 xl:px-36">
+<nav class="bg-transparent relative top-0 left-0 bottom-0 xl:px-36">
     <div class="flex justify-between mx-auto p-6">
         <img src="../../../assets/img/Logonetflix.png" class="w-[89px] sm:w-[89px] lg:w-[148px]">
-        <button
-            class="bg-[rgb(229,9,20)] hover:bg-[rgb(193,17,25)] rounded-md px-4 h-8 text-sm items-center text-white">Sign
-            In</button>
+        <a routerLink="/login"
+            class="bg-[rgb(229,9,20)] hover:bg-[rgb(193,17,25)] rounded-md px-4 h-8 text-sm items-center flex text-white">Sign
+            In</a>
     </div>
 </nav>
 
@@ -380,10 +380,12 @@
         </div>
         <div class="relative col-span-full lg:order-1 lg:col-span-6 flex items-center justify-center text-center">
             <img src="../../../assets/img/iphone.jpg" alt="">
-            <div class="inline-table absolute bottom-8 bg-black rounded-lg border-2 border-stone-700 h-16 lg:h-24 w-80 sm:w-96 md:w-[26rem] lg:w-80">
+            <div
+                class="inline-table absolute bottom-8 bg-black rounded-lg border-2 border-stone-700 h-16 lg:h-24 w-80 sm:w-96 md:w-[26rem] lg:w-80">
                 <div class="grid grid-cols-12 h-full">
                     <div class="relative col-span-2 flex items-center">
-                        <img class="object-contain w-auto p-2 lg:p-0 lg:pl-2" src="../../../assets/img/strangerthings.png" alt="">
+                        <img class="object-contain w-auto p-2 lg:p-0 lg:pl-2"
+                            src="../../../assets/img/strangerthings.png" alt="">
                     </div>
                     <div class="col-span-8 flex items-center">
                         <div class="text-start pl-2 lg:pl-4">
@@ -392,9 +394,11 @@
                         </div>
                     </div>
                     <div class="col-span-2 flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                          </svg>                          
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -404,15 +408,15 @@
 
 <hr class="border-4 border-zinc-800">
 
-<footer class="p-7">
+<footer class="relative p-7">
     <div class="grid grid-cols-12 lg:px-10 xl:px-28 md:pt-8">
         <div class="col-span-12 h-9 mb-3">
             <p target="_blank" class="text-zinc-300 text-base underline cursor-pointer">Questions? Contact to us.</p>
         </div>
         @for (item of footer; track $index) {
-            <div class="col-span-6 lg:col-span-3 h-9">
-                <p target="_blank" class="text-zinc-300 text-sm underline cursor-pointer"> {{item}} </p>
-            </div>
+        <div class="col-span-6 lg:col-span-3 h-9">
+            <p target="_blank" class="text-zinc-300 text-sm underline cursor-pointer"> {{item}} </p>
+        </div>
         }
         <div class="col-span-12 h-9 pt-3">
             <p target="_blank" class="text-zinc-300 text-base">Netflix Italy</p>
