@@ -9,8 +9,13 @@ import { Title } from '@angular/platform-browser';
 export class LoginComponent {
 
   footer = ['FAQ', 'Help Center', 'Terms of Use', 'Privacy', 'Cookie Preferences', 'Ad Choices']
+  user = { email: '', password: '' };
 
   constructor(private titleService: Title) {
     this.titleService.setTitle('Netflix');
+  }
+
+  onSubmit(user: any) {
+    console.log(user);
   }
 }
