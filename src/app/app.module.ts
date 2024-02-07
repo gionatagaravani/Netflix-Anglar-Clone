@@ -9,11 +9,13 @@ import { FormsModule } from '@angular/forms';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { environment } from './shared/config';
+import { BrowseComponent } from './components/browse/browse.component';
 @NgModule({
   declarations: [
     AppComponent,
     LandingpageComponent,
-    LoginComponent
+    LoginComponent,
+    BrowseComponent
   ],
   imports: [
     BrowserModule,

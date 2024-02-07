@@ -1,426 +1,806 @@
 <nav class="bg-transparent relative top-0 left-0 bottom-0 xl:px-36">
-    <div class="flex justify-between mx-auto p-6">
-        <img src="../../../assets/img/Logonetflix.png" class="w-[89px] sm:w-[89px] lg:w-[148px]">
-        <a routerLink="/login"
-            class="bg-[rgb(229,9,20)] hover:bg-[rgb(193,17,25)] rounded px-4 h-8 text-sm items-center flex text-white">Sign
-            In</a>
-    </div>
+  <div class="flex justify-between mx-auto p-6">
+    <img
+      src="../../../assets/img/Logonetflix.png"
+      class="w-[89px] sm:w-[89px] lg:w-[148px]"
+    />
+    <a
+      routerLink="/login"
+      class="bg-[rgb(229,9,20)] hover:bg-[rgb(193,17,25)] rounded px-4 h-8 text-sm items-center flex text-white"
+      >Sign In</a
+    >
+  </div>
 </nav>
 
 <div class="absolute top-0 h-[480px] lg:h-[700px] w-full -z-10">
-    <img src="../../../assets/img/homebg.jpg" class="object-cover w-full h-full opacity-50">
+  <img
+    src="../../../assets/img/homebg.jpg"
+    class="object-cover w-full h-full opacity-50"
+  />
 </div>
-<div class="relative flex justify-center text-center h-full pt-12 sm:pt-28 md:pt-32 lg:pt-48">
-    <div class="flex align-middle justify-center z-1">
-        <div class="p-0 basis-11/12 lg:basis-full">
-            <h1 class="text-white text-3xl lg:text-5xl font-bold m-0">Unlimited movies, TV shows, and more</h1>
-            <p class="text-white text-lg lg:text-xl font-bold mt-4">Watch anywhere. Cancel anytime.</p>
-            <div class="text-center mt-4">
-                <p class="text-white text-lg font-bold">Ready to watch? Enter your email to create or restart your
-                    membership.</p>
-                <div class="grid sm:grid-cols-10 lg:px-32 gap-y-3 gap-x-[-30px] mt-4 text-center">
-                    <div class="relative col-span-5 sm:col-span-6 md:col-span-7 pr-3">
-                        <input type="email" placeholder=" "
-                            class="text-white w-full px-4 py-3 sm:py-4 text-base rounded-md border-neutral-600 border-[0.1px] bg-neutral-900 bg-opacity-80 focus:ring-white focus:border-white placeholder:text-gray-300 peer">
-                            <label for="floating_filled" class="absolute text-base text-neutral-300 duration-300 transform -translate-y-4 scale-75 top-4 left-5 z-10 origin-[0] start-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Email address</label>
-                        </div>
-                    <div class="col-span-5 sm:col-span-4 md:col-span-3 justify-center">
-                        <button
-                            class="bg-[rgb(229,9,20)] hover:bg-[rgb(193,17,25)] rounded-md px-4 py-3 sm:py-4 text-xl font-black text-white text-center inline-flex items-center">
-                            Get Started
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
+<div
+  class="relative flex justify-center text-center h-full pt-12 sm:pt-28 md:pt-32 lg:pt-48"
+>
+  <div class="flex align-middle justify-center z-1">
+    <div class="p-0 basis-11/12 lg:basis-full">
+      <h1 class="text-white text-3xl lg:text-5xl font-bold m-0">
+        Unlimited movies, TV shows, and more
+      </h1>
+      <p class="text-white text-lg lg:text-xl font-bold mt-4">
+        Watch anywhere. Cancel anytime.
+      </p>
+      <div class="text-center mt-4">
+        <p class="text-white text-lg font-bold">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <div
+          class="grid sm:grid-cols-10 lg:px-32 gap-y-3 gap-x-[-30px] mt-4 text-center"
+        >
+          <div class="relative col-span-5 sm:col-span-6 md:col-span-7 pr-3">
+            <input
+              type="email"
+              placeholder=" "
+              class="text-white w-full px-4 py-3 sm:py-4 text-base rounded-md border-neutral-600 border-[0.1px] bg-neutral-900 bg-opacity-80 focus:ring-white focus:border-white placeholder:text-gray-300 peer"
+            />
+            <label
+              for="floating_filled"
+              class="absolute text-base text-neutral-300 duration-300 transform -translate-y-4 scale-75 top-4 left-5 z-10 origin-[0] start-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
+              >Email address</label
+            >
+          </div>
+          <div class="col-span-5 sm:col-span-4 md:col-span-3 justify-center">
+            <button
+              class="bg-[rgb(229,9,20)] hover:bg-[rgb(193,17,25)] rounded-md px-4 py-3 sm:py-4 text-xl font-black text-white text-center inline-flex items-center"
+            >
+              Get Started
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <div
-    class="relative bg-gradient-to-r from-blue-950 via-rose-900 to-blue-950 rounded-md h-44 sm:h-36 mt-14 sm:mt-14 md:mt-12 lg:mt-32 mx-6 sm:mx-[72px]">
-    <div class="flex md:justify-center items-center h-full">
-        <div class="absolute left-11 top-[-60px] md:relative md:flex md:pr-20 md:pt-28">
-            <svg width="96" height="96" fill="none">
-                <path
-                    d="M48 95.213c26.51 0 48-3.875 48-8.656 0-4.78-21.49-8.655-48-8.655S0 81.777 0 86.557c0 4.78 21.49 8.656 48 8.656Z"
-                    fill="url(#a)"></path>
-                <path
-                    d="M48 77.115c26.51 0 48-17.087 48-38.164C96 17.873 74.51.787 48 .787S0 17.874 0 38.95s21.49 38.164 48 38.164Z"
-                    fill="url(#b)"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M75.376 75.624a2.36 2.36 0 1 0-2.817 1.408c-.062.157-.107.32-.134.486a3.15 3.15 0 0 0-1.161 4.298 3.146 3.146 0 0 0 4.297 1.161 3.148 3.148 0 0 0 4.927 2.228 2.36 2.36 0 1 0 3.662-2.809 3.148 3.148 0 0 0-4.448-4.447 2.355 2.355 0 0 0-2.67-.669 2.365 2.365 0 0 0-1.656-1.656Zm-50.983 1.49c0 .31-.044.619-.134.915a4.328 4.328 0 1 1-3.256 7.922 2.743 2.743 0 0 1-1.724.606c-.477.001-.946-.123-1.36-.358a1.966 1.966 0 0 1-3.74-.569 2.36 2.36 0 1 1-.013-4.445 3.148 3.148 0 0 1 4.07-3.145 3.148 3.148 0 1 1 6.157-.925Z"
-                    fill="url(#c)"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M51.934 20.459c0 .388-.07.76-.198 1.102.234.114.452.256.65.422a3.146 3.146 0 0 1 3.102-1.498 3.147 3.147 0 0 1 5.888 1.646 3.154 3.154 0 0 1 1.953 1.498c.783.095 1.501.48 2.013 1.078a3.935 3.935 0 0 1 4.868 5.726c.559.375.983.918 1.212 1.552a3.148 3.148 0 0 1 5.26 3.445 3.147 3.147 0 1 1-3.08 4.701H24.392v-1.208a3.148 3.148 0 0 1-4.346-4.217 3.148 3.148 0 0 1 3.478-5.215 3.142 3.142 0 0 1 2.442-1.164 3.147 3.147 0 0 1 3.554-3.122 3.147 3.147 0 0 1 3.18-1.568 3.147 3.147 0 0 1 4.803-3.954 3.15 3.15 0 0 1 3.238 2.094c.41-.276.88-.45 1.371-.51a3.147 3.147 0 0 1 3.597-1.478 3.148 3.148 0 0 1 6.224.67Z"
-                    fill="url(#d)"></path>
-                <path opacity="0.6" d="M46.033 36.984a7.475 7.475 0 1 0 0-14.951 7.475 7.475 0 0 0 0 14.95Z"
-                    fill="url(#e)">
-                </path>
-                <path opacity="0.6" d="M43.672 32.262a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z"
-                    fill="url(#f)">
-                </path>
-                <path opacity="0.6" d="M42.098 36.197a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z"
-                    fill="url(#g)">
-                </path>
-                <path opacity="0.6" d="M27.148 38.557a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z"
-                    fill="url(#h)">
-                </path>
-                <path opacity="0.6" d="M30.295 36.197a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z"
-                    fill="url(#i)">
-                </path>
-                <path opacity="0.6" d="M30.295 37.77a2.754 2.754 0 1 0 0-5.508 2.754 2.754 0 0 0 0 5.508Z"
-                    fill="url(#j)">
-                </path>
-                <path opacity="0.2" d="M73.574 36.197a2.754 2.754 0 1 0 0-5.508 2.754 2.754 0 0 0 0 5.508Z"
-                    fill="url(#k)">
-                </path>
-                <path opacity="0.2" d="M76.721 39.344a1.967 1.967 0 1 0 0-3.934 1.967 1.967 0 0 0 0 3.934Z"
-                    fill="url(#l)">
-                </path>
-                <path opacity="0.3" d="M72.787 40.131a3.541 3.541 0 1 0 0-7.082 3.541 3.541 0 0 0 0 7.082Z"
-                    fill="url(#m)">
-                </path>
-                <path opacity="0.2" d="M58.623 24.393a2.754 2.754 0 1 0 0-5.508 2.754 2.754 0 0 0 0 5.508Z"
-                    fill="url(#n)">
-                </path>
-                <path opacity="0.2" d="M48.393 21.246a1.967 1.967 0 1 0 0-3.935 1.967 1.967 0 0 0 0 3.935Z"
-                    fill="url(#o)">
-                </path>
-                <path opacity="0.2" d="M35.016 23.607a1.967 1.967 0 1 0 0-3.935 1.967 1.967 0 0 0 0 3.935Z"
-                    fill="url(#p)">
-                </path>
-                <path opacity="0.2" d="M61.77 33.05a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z"
-                    fill="url(#q)"></path>
-                <path opacity="0.6" d="M57.05 31.475a5.115 5.115 0 1 0 0-10.229 5.115 5.115 0 0 0 0 10.23Z"
-                    fill="url(#r)">
-                </path>
-                <path opacity="0.2" d="M59.41 33.836a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z"
-                    fill="url(#s)">
-                </path>
-                <path d="M18.885 36.984h44.853l-3.935 51.934h-37.77l-3.148-51.934Z" fill="url(#t)"></path>
-                <path d="m71.607 85.77-11.804 3.148 3.935-51.934 14.95 3.934-7.081 44.852Z" fill="url(#u)"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="m46.33 47.333.254-10.35h-9.388l.104 9.84a16.418 16.418 0 0 0-4.664 1.825l-.327-11.664h-9.407l2.927 51.934h7.943l-.317-11.22a16.431 16.431 0 0 0 4.187 1.453l.105 9.767h7.558l.25-10.101a16.449 16.449 0 0 0 3.675-1.58l-.37 11.681h8.321l2.741-51.934h-9.417l-.388 12.237a16.47 16.47 0 0 0-3.788-1.888Zm16.078 40.89 2.95-.786 5.845-48.488-4.501-1.186-4.294 50.46Zm4.63-1.234 2.317-.618 7.838-45.846-4.375-1.152-5.78 47.616ZM53.507 62.95c0 6.953-5.636 12.59-12.59 12.59s-12.59-5.636-12.59-12.59 5.636-12.59 12.59-12.59 12.59 5.636 12.59 12.59Zm-7.172 6.795L44.64 64.26l4.108-3.047a.39.39 0 0 0-.2-.702 93.591 93.591 0 0 0-5.184-.274l-2.076-5.712a.394.394 0 0 0-.74 0l-2.076 5.712c-1.76.044-3.49.137-5.185.274a.39.39 0 0 0-.198.702l4.107 3.046-1.696 5.485a.394.394 0 0 0 .598.442l4.82-3.281 4.82 3.281a.394.394 0 0 0 .599-.441h-.001Z"
-                    fill="url(#v)"></path>
-                <path opacity="0.4" d="M16.918 82.623a1.967 1.967 0 1 0 0-3.934 1.967 1.967 0 0 0 0 3.934Z"
-                    fill="url(#w)">
-                </path>
-                <path opacity="0.4" d="M13.77 84.984a1.967 1.967 0 1 0 0-3.935 1.967 1.967 0 0 0 0 3.935Z"
-                    fill="url(#x)">
-                </path>
-                <path opacity="0.4" d="M16.131 84.984a1.967 1.967 0 1 0 0-3.935 1.967 1.967 0 0 0 0 3.935Z"
-                    fill="url(#y)">
-                </path>
-                <path opacity="0.4" d="M19.279 86.557a1.967 1.967 0 1 0 0-3.934 1.967 1.967 0 0 0 0 3.934Z"
-                    fill="url(#z)">
-                </path>
-                <path opacity="0.4" d="M82.23 85.77a1.967 1.967 0 1 0 0-3.934 1.967 1.967 0 0 0 0 3.934Z"
-                    fill="url(#A)"></path>
-                <path opacity="0.4" d="M81.836 82.623a2.36 2.36 0 1 0 0-4.721 2.36 2.36 0 0 0 0 4.721Z" fill="url(#B)">
-                </path>
-                <path opacity="0.4" d="M77.902 82.623a2.36 2.36 0 1 0 0-4.721 2.36 2.36 0 0 0 0 4.721Z" fill="url(#C)">
-                </path>
-                <path opacity="0.4" d="M75.147 81.836a2.754 2.754 0 1 0 0-5.508 2.754 2.754 0 0 0 0 5.508Z"
-                    fill="url(#D)">
-                </path>
-                <path opacity="0.4" d="M18.492 84.984a2.754 2.754 0 1 0 0-5.509 2.754 2.754 0 0 0 0 5.509Z"
-                    fill="url(#E)">
-                </path>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M73.967 79.475a2.361 2.361 0 0 1 2.36 2.361 3.148 3.148 0 1 1-.88 6.17 2.36 2.36 0 0 1-4.613-.92 2.755 2.755 0 0 1 .773-5.222v-.028a2.36 2.36 0 0 1 2.36-2.36Z"
-                    fill="url(#F)"></path>
-                <defs>
-                    <radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="matrix(0 -8.70201 48.2567 0 48 86.604)">
-                        <stop offset="0.286" stop-color="#7D2889"></stop>
-                        <stop offset="0.724" stop-color="#FF66D9" stop-opacity="0.41"></stop>
-                        <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="b" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="matrix(0 -38.3681 48.2567 0 48 39.155)">
-                        <stop stop-color="#FFCA45"></stop>
-                        <stop offset="0.453" stop-color="#FF66D9" stop-opacity="0.36"></stop>
-                        <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="c" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(180 23.41 39.738) scale(37.7705)">
-                        <stop offset="0.432" stop-color="#FF8B54"></stop>
-                        <stop offset="0.76" stop-color="#FFBB8D"></stop>
-                        <stop offset="1" stop-color="#F9DDD1"></stop>
-                    </radialGradient>
-                    <radialGradient id="d" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="matrix(0 -10.623 28.257 0 47.607 27.934)">
-                        <stop offset="0.302" stop-color="#F9DDD1"></stop>
-                        <stop offset="0.674" stop-color="#FFBB8D"></stop>
-                        <stop offset="1" stop-color="#FF8B54"></stop>
-                    </radialGradient>
-                    <radialGradient id="e" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 8.042 37.99) scale(7.03568)">
-                        <stop offset="0.375" stop-color="#FFF4EB"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="f" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 8.112 35.56) scale(4.81389)">
-                        <stop offset="0.375" stop-color="#FFF4EB"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="g" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 5.358 36.74) scale(4.81389)">
-                        <stop offset="0.375" stop-color="#FFF4EB"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="h" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 -3.298 30.445) scale(4.81389)">
-                        <stop offset="0.375" stop-color="#FFF4EB"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="i" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 -.544 30.839) scale(4.81389)">
-                        <stop offset="0.375" stop-color="#FFF4EB"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="j" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 -2.442 32.737) scale(2.59209)">
-                        <stop offset="0.375" stop-color="#FFF4EB"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="k" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 19.985 53.59) scale(2.59209)">
-                        <stop offset="0.375" stop-color="#FFF4EB"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="l" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 19.614 57.107) scale(1.85149)">
-                        <stop offset="0.375" stop-color="#FFF4EB"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="m" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 17.994 54.792) scale(3.33269)">
-                        <stop offset="0.375" stop-color="#FFF4EB"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="n" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 18.41 40.212) scale(2.59209)">
-                        <stop offset="0.375" stop-color="#FFF4EB"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="o" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 14.5 33.894) scale(1.8515)">
-                        <stop offset="0.375" stop-color="#FFF4EB"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="p" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 6.63 28.386) scale(1.85149)">
-                        <stop offset="0.375" stop-color="#FFF4EB"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="q" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 16.768 45.003) scale(4.81389)">
-                        <stop offset="0.375" stop-color="#FFF4EB"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="r" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 15.194 41.855) scale(4.81389)">
-                        <stop offset="0.375" stop-color="#FFF4EB"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="s" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 15.194 44.216) scale(4.81389)">
-                        <stop offset="0.375" stop-color="#FFF4EB"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="w" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 -31.927 48.845) scale(1.8515)">
-                        <stop offset="0.375" stop-color="#F9DDD1"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="x" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 -34.681 48.452) scale(1.8515)">
-                        <stop offset="0.375" stop-color="#F9DDD1"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="y" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 -33.5 49.632) scale(1.8515)">
-                        <stop offset="0.375" stop-color="#F9DDD1"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="z" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 -32.714 51.993) scale(1.85149)">
-                        <stop offset="0.375" stop-color="#F9DDD1"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="A" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 -.845 83.075) scale(1.85149)">
-                        <stop offset="0.375" stop-color="#F9DDD1"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="B" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 .718 81.118) scale(2.2218)">
-                        <stop offset="0.375" stop-color="#F9DDD1"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="C" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 -1.25 79.151) scale(2.2218)">
-                        <stop offset="0.375" stop-color="#F9DDD1"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="D" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 -2.048 77.196) scale(2.5921)">
-                        <stop offset="0.375" stop-color="#F9DDD1"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="E" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(90 -31.95 50.442) scale(2.5921)">
-                        <stop offset="0.375" stop-color="#F9DDD1"></stop>
-                        <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
-                    </radialGradient>
-                    <radialGradient id="F" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="rotate(111.038 9.116 68.506) scale(5.48002)">
-                        <stop stop-color="#FDF7F2"></stop>
-                        <stop offset="1" stop-color="#FFD8BD"></stop>
-                    </radialGradient>
-                    <linearGradient id="t" x1="59.803" y1="88.918" x2="33.764" y2="21.046"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#E0B1CC"></stop>
-                        <stop offset="0.431" stop-color="#FFF1F1"></stop>
-                        <stop offset="1" stop-color="#FFC9A5"></stop>
-                    </linearGradient>
-                    <linearGradient id="u" x1="59.803" y1="53.115" x2="83.41" y2="53.115"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#D16AE9"></stop>
-                        <stop offset="1" stop-color="#FF661D"></stop>
-                    </linearGradient>
-                    <linearGradient id="v" x1="18.111" y1="36.984" x2="75.136" y2="85.621"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FF661D"></stop>
-                        <stop offset="0.5" stop-color="#CE3A00"></stop>
-                        <stop offset="1" stop-color="#A60A5E"></stop>
-                    </linearGradient>
-                </defs>
+  class="relative bg-gradient-to-r from-blue-950 via-rose-900 to-blue-950 rounded-md h-44 sm:h-36 mt-14 sm:mt-14 md:mt-12 lg:mt-32 mx-6 sm:mx-[72px]"
+>
+  <div class="flex md:justify-center items-center h-full">
+    <div
+      class="absolute left-11 top-[-60px] md:relative md:flex md:pr-20 md:pt-28"
+    >
+      <svg width="96" height="96" fill="none">
+        <path
+          d="M48 95.213c26.51 0 48-3.875 48-8.656 0-4.78-21.49-8.655-48-8.655S0 81.777 0 86.557c0 4.78 21.49 8.656 48 8.656Z"
+          fill="url(#a)"
+        ></path>
+        <path
+          d="M48 77.115c26.51 0 48-17.087 48-38.164C96 17.873 74.51.787 48 .787S0 17.874 0 38.95s21.49 38.164 48 38.164Z"
+          fill="url(#b)"
+        ></path>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M75.376 75.624a2.36 2.36 0 1 0-2.817 1.408c-.062.157-.107.32-.134.486a3.15 3.15 0 0 0-1.161 4.298 3.146 3.146 0 0 0 4.297 1.161 3.148 3.148 0 0 0 4.927 2.228 2.36 2.36 0 1 0 3.662-2.809 3.148 3.148 0 0 0-4.448-4.447 2.355 2.355 0 0 0-2.67-.669 2.365 2.365 0 0 0-1.656-1.656Zm-50.983 1.49c0 .31-.044.619-.134.915a4.328 4.328 0 1 1-3.256 7.922 2.743 2.743 0 0 1-1.724.606c-.477.001-.946-.123-1.36-.358a1.966 1.966 0 0 1-3.74-.569 2.36 2.36 0 1 1-.013-4.445 3.148 3.148 0 0 1 4.07-3.145 3.148 3.148 0 1 1 6.157-.925Z"
+          fill="url(#c)"
+        ></path>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M51.934 20.459c0 .388-.07.76-.198 1.102.234.114.452.256.65.422a3.146 3.146 0 0 1 3.102-1.498 3.147 3.147 0 0 1 5.888 1.646 3.154 3.154 0 0 1 1.953 1.498c.783.095 1.501.48 2.013 1.078a3.935 3.935 0 0 1 4.868 5.726c.559.375.983.918 1.212 1.552a3.148 3.148 0 0 1 5.26 3.445 3.147 3.147 0 1 1-3.08 4.701H24.392v-1.208a3.148 3.148 0 0 1-4.346-4.217 3.148 3.148 0 0 1 3.478-5.215 3.142 3.142 0 0 1 2.442-1.164 3.147 3.147 0 0 1 3.554-3.122 3.147 3.147 0 0 1 3.18-1.568 3.147 3.147 0 0 1 4.803-3.954 3.15 3.15 0 0 1 3.238 2.094c.41-.276.88-.45 1.371-.51a3.147 3.147 0 0 1 3.597-1.478 3.148 3.148 0 0 1 6.224.67Z"
+          fill="url(#d)"
+        ></path>
+        <path
+          opacity="0.6"
+          d="M46.033 36.984a7.475 7.475 0 1 0 0-14.951 7.475 7.475 0 0 0 0 14.95Z"
+          fill="url(#e)"
+        ></path>
+        <path
+          opacity="0.6"
+          d="M43.672 32.262a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z"
+          fill="url(#f)"
+        ></path>
+        <path
+          opacity="0.6"
+          d="M42.098 36.197a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z"
+          fill="url(#g)"
+        ></path>
+        <path
+          opacity="0.6"
+          d="M27.148 38.557a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z"
+          fill="url(#h)"
+        ></path>
+        <path
+          opacity="0.6"
+          d="M30.295 36.197a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z"
+          fill="url(#i)"
+        ></path>
+        <path
+          opacity="0.6"
+          d="M30.295 37.77a2.754 2.754 0 1 0 0-5.508 2.754 2.754 0 0 0 0 5.508Z"
+          fill="url(#j)"
+        ></path>
+        <path
+          opacity="0.2"
+          d="M73.574 36.197a2.754 2.754 0 1 0 0-5.508 2.754 2.754 0 0 0 0 5.508Z"
+          fill="url(#k)"
+        ></path>
+        <path
+          opacity="0.2"
+          d="M76.721 39.344a1.967 1.967 0 1 0 0-3.934 1.967 1.967 0 0 0 0 3.934Z"
+          fill="url(#l)"
+        ></path>
+        <path
+          opacity="0.3"
+          d="M72.787 40.131a3.541 3.541 0 1 0 0-7.082 3.541 3.541 0 0 0 0 7.082Z"
+          fill="url(#m)"
+        ></path>
+        <path
+          opacity="0.2"
+          d="M58.623 24.393a2.754 2.754 0 1 0 0-5.508 2.754 2.754 0 0 0 0 5.508Z"
+          fill="url(#n)"
+        ></path>
+        <path
+          opacity="0.2"
+          d="M48.393 21.246a1.967 1.967 0 1 0 0-3.935 1.967 1.967 0 0 0 0 3.935Z"
+          fill="url(#o)"
+        ></path>
+        <path
+          opacity="0.2"
+          d="M35.016 23.607a1.967 1.967 0 1 0 0-3.935 1.967 1.967 0 0 0 0 3.935Z"
+          fill="url(#p)"
+        ></path>
+        <path
+          opacity="0.2"
+          d="M61.77 33.05a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z"
+          fill="url(#q)"
+        ></path>
+        <path
+          opacity="0.6"
+          d="M57.05 31.475a5.115 5.115 0 1 0 0-10.229 5.115 5.115 0 0 0 0 10.23Z"
+          fill="url(#r)"
+        ></path>
+        <path
+          opacity="0.2"
+          d="M59.41 33.836a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z"
+          fill="url(#s)"
+        ></path>
+        <path
+          d="M18.885 36.984h44.853l-3.935 51.934h-37.77l-3.148-51.934Z"
+          fill="url(#t)"
+        ></path>
+        <path
+          d="m71.607 85.77-11.804 3.148 3.935-51.934 14.95 3.934-7.081 44.852Z"
+          fill="url(#u)"
+        ></path>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="m46.33 47.333.254-10.35h-9.388l.104 9.84a16.418 16.418 0 0 0-4.664 1.825l-.327-11.664h-9.407l2.927 51.934h7.943l-.317-11.22a16.431 16.431 0 0 0 4.187 1.453l.105 9.767h7.558l.25-10.101a16.449 16.449 0 0 0 3.675-1.58l-.37 11.681h8.321l2.741-51.934h-9.417l-.388 12.237a16.47 16.47 0 0 0-3.788-1.888Zm16.078 40.89 2.95-.786 5.845-48.488-4.501-1.186-4.294 50.46Zm4.63-1.234 2.317-.618 7.838-45.846-4.375-1.152-5.78 47.616ZM53.507 62.95c0 6.953-5.636 12.59-12.59 12.59s-12.59-5.636-12.59-12.59 5.636-12.59 12.59-12.59 12.59 5.636 12.59 12.59Zm-7.172 6.795L44.64 64.26l4.108-3.047a.39.39 0 0 0-.2-.702 93.591 93.591 0 0 0-5.184-.274l-2.076-5.712a.394.394 0 0 0-.74 0l-2.076 5.712c-1.76.044-3.49.137-5.185.274a.39.39 0 0 0-.198.702l4.107 3.046-1.696 5.485a.394.394 0 0 0 .598.442l4.82-3.281 4.82 3.281a.394.394 0 0 0 .599-.441h-.001Z"
+          fill="url(#v)"
+        ></path>
+        <path
+          opacity="0.4"
+          d="M16.918 82.623a1.967 1.967 0 1 0 0-3.934 1.967 1.967 0 0 0 0 3.934Z"
+          fill="url(#w)"
+        ></path>
+        <path
+          opacity="0.4"
+          d="M13.77 84.984a1.967 1.967 0 1 0 0-3.935 1.967 1.967 0 0 0 0 3.935Z"
+          fill="url(#x)"
+        ></path>
+        <path
+          opacity="0.4"
+          d="M16.131 84.984a1.967 1.967 0 1 0 0-3.935 1.967 1.967 0 0 0 0 3.935Z"
+          fill="url(#y)"
+        ></path>
+        <path
+          opacity="0.4"
+          d="M19.279 86.557a1.967 1.967 0 1 0 0-3.934 1.967 1.967 0 0 0 0 3.934Z"
+          fill="url(#z)"
+        ></path>
+        <path
+          opacity="0.4"
+          d="M82.23 85.77a1.967 1.967 0 1 0 0-3.934 1.967 1.967 0 0 0 0 3.934Z"
+          fill="url(#A)"
+        ></path>
+        <path
+          opacity="0.4"
+          d="M81.836 82.623a2.36 2.36 0 1 0 0-4.721 2.36 2.36 0 0 0 0 4.721Z"
+          fill="url(#B)"
+        ></path>
+        <path
+          opacity="0.4"
+          d="M77.902 82.623a2.36 2.36 0 1 0 0-4.721 2.36 2.36 0 0 0 0 4.721Z"
+          fill="url(#C)"
+        ></path>
+        <path
+          opacity="0.4"
+          d="M75.147 81.836a2.754 2.754 0 1 0 0-5.508 2.754 2.754 0 0 0 0 5.508Z"
+          fill="url(#D)"
+        ></path>
+        <path
+          opacity="0.4"
+          d="M18.492 84.984a2.754 2.754 0 1 0 0-5.509 2.754 2.754 0 0 0 0 5.509Z"
+          fill="url(#E)"
+        ></path>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M73.967 79.475a2.361 2.361 0 0 1 2.36 2.361 3.148 3.148 0 1 1-.88 6.17 2.36 2.36 0 0 1-4.613-.92 2.755 2.755 0 0 1 .773-5.222v-.028a2.36 2.36 0 0 1 2.36-2.36Z"
+          fill="url(#F)"
+        ></path>
+        <defs>
+          <radialGradient
+            id="a"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0 -8.70201 48.2567 0 48 86.604)"
+          >
+            <stop offset="0.286" stop-color="#7D2889"></stop>
+            <stop
+              offset="0.724"
+              stop-color="#FF66D9"
+              stop-opacity="0.41"
+            ></stop>
+            <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="b"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0 -38.3681 48.2567 0 48 39.155)"
+          >
+            <stop stop-color="#FFCA45"></stop>
+            <stop
+              offset="0.453"
+              stop-color="#FF66D9"
+              stop-opacity="0.36"
+            ></stop>
+            <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="c"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(180 23.41 39.738) scale(37.7705)"
+          >
+            <stop offset="0.432" stop-color="#FF8B54"></stop>
+            <stop offset="0.76" stop-color="#FFBB8D"></stop>
+            <stop offset="1" stop-color="#F9DDD1"></stop>
+          </radialGradient>
+          <radialGradient
+            id="d"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0 -10.623 28.257 0 47.607 27.934)"
+          >
+            <stop offset="0.302" stop-color="#F9DDD1"></stop>
+            <stop offset="0.674" stop-color="#FFBB8D"></stop>
+            <stop offset="1" stop-color="#FF8B54"></stop>
+          </radialGradient>
+          <radialGradient
+            id="e"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 8.042 37.99) scale(7.03568)"
+          >
+            <stop offset="0.375" stop-color="#FFF4EB"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="f"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 8.112 35.56) scale(4.81389)"
+          >
+            <stop offset="0.375" stop-color="#FFF4EB"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="g"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 5.358 36.74) scale(4.81389)"
+          >
+            <stop offset="0.375" stop-color="#FFF4EB"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="h"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 -3.298 30.445) scale(4.81389)"
+          >
+            <stop offset="0.375" stop-color="#FFF4EB"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="i"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 -.544 30.839) scale(4.81389)"
+          >
+            <stop offset="0.375" stop-color="#FFF4EB"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="j"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 -2.442 32.737) scale(2.59209)"
+          >
+            <stop offset="0.375" stop-color="#FFF4EB"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="k"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 19.985 53.59) scale(2.59209)"
+          >
+            <stop offset="0.375" stop-color="#FFF4EB"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="l"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 19.614 57.107) scale(1.85149)"
+          >
+            <stop offset="0.375" stop-color="#FFF4EB"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="m"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 17.994 54.792) scale(3.33269)"
+          >
+            <stop offset="0.375" stop-color="#FFF4EB"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="n"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 18.41 40.212) scale(2.59209)"
+          >
+            <stop offset="0.375" stop-color="#FFF4EB"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="o"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 14.5 33.894) scale(1.8515)"
+          >
+            <stop offset="0.375" stop-color="#FFF4EB"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="p"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 6.63 28.386) scale(1.85149)"
+          >
+            <stop offset="0.375" stop-color="#FFF4EB"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="q"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 16.768 45.003) scale(4.81389)"
+          >
+            <stop offset="0.375" stop-color="#FFF4EB"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="r"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 15.194 41.855) scale(4.81389)"
+          >
+            <stop offset="0.375" stop-color="#FFF4EB"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="s"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 15.194 44.216) scale(4.81389)"
+          >
+            <stop offset="0.375" stop-color="#FFF4EB"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="w"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 -31.927 48.845) scale(1.8515)"
+          >
+            <stop offset="0.375" stop-color="#F9DDD1"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="x"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 -34.681 48.452) scale(1.8515)"
+          >
+            <stop offset="0.375" stop-color="#F9DDD1"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="y"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 -33.5 49.632) scale(1.8515)"
+          >
+            <stop offset="0.375" stop-color="#F9DDD1"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="z"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 -32.714 51.993) scale(1.85149)"
+          >
+            <stop offset="0.375" stop-color="#F9DDD1"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="A"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 -.845 83.075) scale(1.85149)"
+          >
+            <stop offset="0.375" stop-color="#F9DDD1"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="B"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 .718 81.118) scale(2.2218)"
+          >
+            <stop offset="0.375" stop-color="#F9DDD1"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="C"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 -1.25 79.151) scale(2.2218)"
+          >
+            <stop offset="0.375" stop-color="#F9DDD1"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="D"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 -2.048 77.196) scale(2.5921)"
+          >
+            <stop offset="0.375" stop-color="#F9DDD1"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="E"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(90 -31.95 50.442) scale(2.5921)"
+          >
+            <stop offset="0.375" stop-color="#F9DDD1"></stop>
+            <stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop>
+          </radialGradient>
+          <radialGradient
+            id="F"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="rotate(111.038 9.116 68.506) scale(5.48002)"
+          >
+            <stop stop-color="#FDF7F2"></stop>
+            <stop offset="1" stop-color="#FFD8BD"></stop>
+          </radialGradient>
+          <linearGradient
+            id="t"
+            x1="59.803"
+            y1="88.918"
+            x2="33.764"
+            y2="21.046"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#E0B1CC"></stop>
+            <stop offset="0.431" stop-color="#FFF1F1"></stop>
+            <stop offset="1" stop-color="#FFC9A5"></stop>
+          </linearGradient>
+          <linearGradient
+            id="u"
+            x1="59.803"
+            y1="53.115"
+            x2="83.41"
+            y2="53.115"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#D16AE9"></stop>
+            <stop offset="1" stop-color="#FF661D"></stop>
+          </linearGradient>
+          <linearGradient
+            id="v"
+            x1="18.111"
+            y1="36.984"
+            x2="75.136"
+            y2="85.621"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#FF661D"></stop>
+            <stop offset="0.5" stop-color="#CE3A00"></stop>
+            <stop offset="1" stop-color="#A60A5E"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div
+      class="flex md:flex items-baseline justify-items-start sm:justify-items-center"
+    >
+      <div class="pt-4 pl-8 md:pt-0 md:pl-0">
+        <h1 class="text-white text-xl font-bold">
+          The Netflix you love for just EUR 5.49.
+        </h1>
+        <p class="text-white text-base mt-1">Get the Standard with ads plan.</p>
+        <a
+          href="http://"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex text-base text-blue-600 underline mt-1"
+          >Learn More
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex justify-center my-12 p-5 xl:px-44">
+  <div class="grid grid-cols-12">
+    <div
+      class="col-span-full lg:col-span-6 flex items-center justify-center text-center lg:text-start"
+    >
+      <div class="p-2">
+        <h1 class="text-white text-3xl lg:text-5xl font-bold">
+          Enjoy on your TV
+        </h1>
+        <p class="text-white text-lg lg:text-2xl mt-2">
+          Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+          players, and more.
+        </p>
+      </div>
+    </div>
+    <div
+      class="col-span-full lg:col-span-6 flex items-center justify-center text-center"
+    >
+      <video src="../../../assets/vid/home.mp4" autoplay loop></video>
+    </div>
+  </div>
+</div>
+
+<hr class="border-4 border-zinc-800" />
+
+<div class="flex justify-center my-12 p-5 xl:px-44">
+  <div class="grid grid-cols-12">
+    <div
+      class="col-span-full lg:order-2 lg:col-span-6 flex items-center justify-center text-center lg:text-start"
+    >
+      <div class="p-2">
+        <h1 class="text-white text-3xl lg:text-5xl font-bold">
+          Watch everywhere
+        </h1>
+        <p class="text-white text-lg lg:text-2xl mt-2">
+          Stream unlimited movies and TV shows on your phone, tablet, laptop,
+          and TV.
+        </p>
+      </div>
+    </div>
+    <div
+      class="col-span-full lg:order-1 lg:col-span-6 flex items-center justify-center text-center"
+    >
+      <video src="../../../assets/vid/home2.mp4" autoplay loop></video>
+    </div>
+  </div>
+</div>
+
+<hr class="border-4 border-zinc-800" />
+
+<div class="flex justify-center my-12 p-5 xl:px-44">
+  <div class="grid grid-cols-12">
+    <div
+      class="col-span-full lg:col-span-6 flex items-center justify-center text-center lg:text-start"
+    >
+      <div class="p-2">
+        <h1 class="text-white text-3xl lg:text-5xl font-bold">
+          Create profiles for kids
+        </h1>
+        <p class="text-white text-lg lg:text-2xl mt-2">
+          Send kids on adventures with their favorite characters in a space made
+          just for them—free with your membership.
+        </p>
+      </div>
+    </div>
+    <div
+      class="col-span-full lg:col-span-6 flex items-center justify-center text-center"
+    >
+      <img src="../../../assets/img/kids.png" alt="" />
+    </div>
+  </div>
+</div>
+
+<hr class="border-4 border-zinc-800" />
+
+<div class="flex justify-center my-12 p-5 xl:px-44">
+  <div class="grid grid-cols-12">
+    <div
+      class="col-span-full lg:order-2 lg:col-span-6 flex items-center justify-center text-center lg:text-start"
+    >
+      <div class="p-2">
+        <h1 class="text-white text-3xl lg:text-5xl font-bold">
+          Download your shows to watch offline
+        </h1>
+        <p class="text-white text-lg lg:text-2xl mt-2">
+          Watch on a plane, train, or submarine...
+        </p>
+      </div>
+    </div>
+    <div
+      class="relative col-span-full lg:order-1 lg:col-span-6 flex items-center justify-center text-center"
+    >
+      <img src="../../../assets/img/iphone.jpg" alt="" />
+      <div
+        class="inline-table absolute bottom-8 bg-black rounded-lg border-2 border-stone-700 h-16 lg:h-24 w-80 sm:w-96 md:w-[26rem] lg:w-80"
+      >
+        <div class="grid grid-cols-12 h-full">
+          <div class="relative col-span-2 flex items-center">
+            <img
+              class="object-contain w-auto p-2 lg:p-0 lg:pl-2"
+              src="../../../assets/img/strangerthings.png"
+              alt=""
+            />
+          </div>
+          <div class="col-span-8 flex items-center">
+            <div class="text-start pl-2 lg:pl-4">
+              <h1 class="text-white text-base font-bold">Stranger Things</h1>
+              <a target="_blank" class="text-xs text-blue-600"
+                >Downloading...</a
+              >
+            </div>
+          </div>
+          <div class="col-span-2 flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+              />
             </svg>
+          </div>
         </div>
-        <div class="flex md:flex items-baseline justify-items-start sm:justify-items-center">
-            <div class="pt-4 pl-8 md:pt-0 md:pl-0">
-                <h1 class="text-white text-xl font-bold">The Netflix you love for just EUR 5.49.</h1>
-                <p class="text-white text-base mt-1">Get the Standard with ads plan.</p>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                    class="inline-flex text-base text-blue-600 underline mt-1">Learn More <svg
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                    </svg></a>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 </div>
 
-<div class="flex justify-center my-12 p-5 xl:px-44">
-    <div class="grid grid-cols-12">
-        <div class="col-span-full lg:col-span-6 flex items-center justify-center text-center lg:text-start">
-            <div class="p-2">
-                <h1 class="text-white text-3xl lg:text-5xl font-bold">Enjoy on your TV</h1>
-                <p class="text-white text-lg lg:text-2xl mt-2">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple
-                    TV,
-                    Blu-ray
-                    players, and more.</p>
-            </div>
-        </div>
-        <div class="col-span-full lg:col-span-6 flex items-center justify-center text-center">
-            <video src="../../../assets/vid/home.mp4" autoplay loop></video>
-        </div>
-    </div>
-</div>
-
-<hr class="border-4 border-zinc-800">
-
-<div class="flex justify-center my-12 p-5 xl:px-44">
-    <div class="grid grid-cols-12">
-        <div class="col-span-full lg:order-2 lg:col-span-6 flex items-center justify-center text-center lg:text-start">
-            <div class="p-2">
-                <h1 class="text-white text-3xl lg:text-5xl font-bold">Watch everywhere</h1>
-                <p class="text-white text-lg lg:text-2xl mt-2">Stream unlimited movies and TV shows on your phone,
-                    tablet, laptop, and TV.</p>
-            </div>
-        </div>
-        <div class="col-span-full lg:order-1 lg:col-span-6 flex items-center justify-center text-center">
-            <video src="../../../assets/vid/home2.mp4" autoplay loop></video>
-        </div>
-    </div>
-</div>
-
-<hr class="border-4 border-zinc-800">
-
-<div class="flex justify-center my-12 p-5 xl:px-44">
-    <div class="grid grid-cols-12">
-        <div class="col-span-full lg:col-span-6 flex items-center justify-center text-center lg:text-start">
-            <div class="p-2">
-                <h1 class="text-white text-3xl lg:text-5xl font-bold">Create profiles for kids</h1>
-                <p class="text-white text-lg lg:text-2xl mt-2">Send kids on adventures with their favorite characters in
-                    a space made just for them—free with your membership.</p>
-            </div>
-        </div>
-        <div class="col-span-full lg:col-span-6 flex items-center justify-center text-center">
-            <img src="../../../assets/img/kids.png" alt="">
-        </div>
-    </div>
-</div>
-
-<hr class="border-4 border-zinc-800">
-
-<div class="flex justify-center my-12 p-5 xl:px-44">
-    <div class="grid grid-cols-12">
-        <div class="col-span-full lg:order-2 lg:col-span-6 flex items-center justify-center text-center lg:text-start">
-            <div class="p-2">
-                <h1 class="text-white text-3xl lg:text-5xl font-bold">Download your shows to watch offline</h1>
-                <p class="text-white text-lg lg:text-2xl mt-2">Watch on a plane, train, or submarine...</p>
-            </div>
-        </div>
-        <div class="relative col-span-full lg:order-1 lg:col-span-6 flex items-center justify-center text-center">
-            <img src="../../../assets/img/iphone.jpg" alt="">
-            <div
-                class="inline-table absolute bottom-8 bg-black rounded-lg border-2 border-stone-700 h-16 lg:h-24 w-80 sm:w-96 md:w-[26rem] lg:w-80">
-                <div class="grid grid-cols-12 h-full">
-                    <div class="relative col-span-2 flex items-center">
-                        <img class="object-contain w-auto p-2 lg:p-0 lg:pl-2"
-                            src="../../../assets/img/strangerthings.png" alt="">
-                    </div>
-                    <div class="col-span-8 flex items-center">
-                        <div class="text-start pl-2 lg:pl-4">
-                            <h1 class="text-white text-base font-bold">Stranger Things</h1>
-                            <a target="_blank" class="text-xs text-blue-600">Downloading...</a>
-                        </div>
-                    </div>
-                    <div class="col-span-2 flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-white">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<hr class="border-4 border-zinc-800">
+<hr class="border-4 border-zinc-800" />
 
 <footer class="relative p-7">
-    <div class="grid grid-cols-12 lg:px-10 xl:px-28 md:pt-8">
-        <div class="col-span-12 h-9 mb-3">
-            <p target="_blank" class="text-zinc-300 text-base underline cursor-pointer">Questions? Contact to us.</p>
-        </div>
-        @for (item of footer; track $index) {
-        <div class="col-span-6 lg:col-span-3 h-9">
-            <p target="_blank" class="text-zinc-300 text-sm underline cursor-pointer"> {{item}} </p>
-        </div>
-        }
-        <div class="col-span-12 h-9 pt-3">
-            <p target="_blank" class="text-zinc-300 text-base">Netflix Italy</p>
-        </div>
+  <div class="grid grid-cols-12 lg:px-10 xl:px-28 md:pt-8">
+    <div class="col-span-12 h-9 mb-3">
+      <p
+        target="_blank"
+        class="text-zinc-300 text-base underline cursor-pointer"
+      >
+        Questions? Contact to us.
+      </p>
     </div>
+    @for (item of footer; track $index) {
+    <div class="col-span-6 lg:col-span-3 h-9">
+      <p target="_blank" class="text-zinc-300 text-sm underline cursor-pointer">
+        {{ item }}
+      </p>
+    </div>
+    }
+    <div class="col-span-12 h-9 pt-3">
+      <p target="_blank" class="text-zinc-300 text-base">Netflix Italy</p>
+    </div>
+  </div>
 </footer>

@@ -4,19 +4,25 @@ import { AuthService } from '../../services/auth.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  styleUrl: './login.component.scss',
 })
 export class LoginComponent {
-
-  footer = ['FAQ', 'Help Center', 'Terms of Use', 'Privacy', 'Cookie Preferences', 'Ad Choices']
+  footer = [
+    'FAQ',
+    'Help Center',
+    'Terms of Use',
+    'Privacy',
+    'Cookie Preferences',
+    'Ad Choices',
+  ];
   user = { email: '', password: '' };
-
+  loading = false;
   constructor(private titleService: Title, private auth: AuthService) {
     this.titleService.setTitle('Netflix');
-    
   }
 
   onSubmit(user: any) {
-    this.auth.Login(user);
+    this.loading = true;
+    this.auth.Login(user).then(() => this.loading = false);
   }
 }
