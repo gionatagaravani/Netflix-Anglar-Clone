@@ -1,30 +1,47 @@
-<div class="flex justify-center h-screen w-screen bg-neutral-900">
+<div class="flex items-center justify-center h-screen w-screen bg-neutral-900">
   <div
-    class="relative flex flex-col justify-center text-center w-full h-3/5 items-center"
+    class="relative flex flex-col pt-36 lg:pt-24 xl:pt-20 text-center w-full h-3/5"
   >
-    <div class="text-white text-3xl lg:text-4xl xl:text-5xl">
+    <div
+      class="text-white font-thin text-3xl lg:text-4xl xl:text-5xl xl:font-medium"
+    >
       Who wants to watch Netflix?
     </div>
-    <div class="flex flex-col justify-center items-center mt-5">
-      <a
-        href="#"
-        class="block max-w-sm p-6 bg-transparent rounded-lg shadow hover:bg-gray-100"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="w-16 h-16 text-neutral-500"
+    <div class="flex flex-row space-x-6 justify-center items-center mt-5">
+      <a href="#" class="group">
+        <div
+          class="block max-w-sm group-hover:border-white group-hover:border-2 h-32 w-32 bg-[url('https://occ-0-3971-784.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABR9W8TJp4xD_KJOP4Pa4TgiFkVAZ9-kRhR_lwgYDL8RdH1K3r_bVn1l0M45bhv1jgpRyvi0Ypdk747vEALu3oywuEtfPLq8lOM9F.png?r=6de')] bg-center bg-cover rounded-md shadow group-hover:bg-gray-100"
         >
-          <path
-            fill-rule="evenodd"
-            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z"
-            clip-rule="evenodd"
-          />
-        </svg>
+        </div>
+        <div
+          class="text-xs lg:text-xl xl:text-2xl pt-1 font-thin text-neutral-500 mt-2 group-hover:text-white"
+        >
+          Name
+        </div>
       </a>
-      <div class="text-lg font-thin text-neutral-500">Add new profile</div>
-
+      <a href="#" class="group">
+        <div
+          class="flex justify-center items-center max-w-sm h-32 w-32 bg-transparent rounded-md shadow group-hover:bg-gray-100"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-16 h-16 lg:h-20 lg:w-20 xl:h-24 xl:w-24 text-neutral-500 mr-auto ml-auto"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div
+          class="text-xs lg:text-xl xl:text-2xl pt-1 font-thin text-neutral-500 mt-2 group-hover:text-white"
+        >
+          Add new profile
+        </div>
+      </a>
     </div>
   </div>
 </div>
