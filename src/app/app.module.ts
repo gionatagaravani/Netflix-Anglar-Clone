@@ -11,6 +11,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { environment } from './shared/config';
 import { BrowseComponent } from './components/browse/browse.component';
 import { NewComponent } from './components/browse/new/new.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { NewComponent } from './components/browse/new/new.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth())
   ],
