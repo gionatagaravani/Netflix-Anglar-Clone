@@ -1,5 +1,6 @@
 <div class="flex items-center justify-center h-screen w-screen bg-neutral-900">
-  <div
+  @if (profiles.length) {
+    <div
     class="relative flex flex-col pt-32 lg:pt-24 xl:pt-20 text-center w-full h-3/5"
   >
     <div
@@ -8,16 +9,19 @@
       Who wants to watch Netflix?
     </div>
     <div class="flex flex-row space-x-6 justify-center items-center mt-5">
-      <a href="#" class="group">
-        <div
-          class="block max-w-sm group-hover:border-white group-hover:border-2 h-[84px] w-[84px] lg:h-28 lg:w-28 xl:h-36 xl:w-36 bg-[url('https://occ-0-3971-784.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABR9W8TJp4xD_KJOP4Pa4TgiFkVAZ9-kRhR_lwgYDL8RdH1K3r_bVn1l0M45bhv1jgpRyvi0Ypdk747vEALu3oywuEtfPLq8lOM9F.png?r=6de')] bg-center bg-cover rounded-md shadow group-hover:bg-gray-100"
-        ></div>
-        <div
-          class="text-xs lg:text-lg xl:text-xl pt-1 font-thin text-neutral-500 mt-2 group-hover:text-gray-100"
-        >
-          Name
-        </div>
-      </a>
+      @for (item of profiles; track $index) {
+        <a href="#" class="group">
+          <div
+            class="block max-w-sm group-hover:border-white group-hover:border-2 h-[84px] w-[84px] lg:h-28 lg:w-28 xl:h-36 xl:w-36 bg-center bg-cover rounded-md shadow group-hover:bg-gray-100"
+            [ngStyle]="{'background-image': 'url(' + item.image + ')'}"
+            ></div>
+          <div
+            class="text-xs lg:text-lg xl:text-xl pt-1 font-thin text-neutral-500 mt-2 group-hover:text-gray-100"
+          >
+            {{ item.name }}
+          </div>
+        </a>
+      }
       <a routerLink="/new" class="group">
         <div
           class="flex justify-center items-center max-w-sm h-[84px] w-[84px] lg:h-28 lg:w-28 xl:h-36 xl:w-36 bg-transparent rounded-md shadow group-hover:bg-gray-100"
@@ -51,4 +55,5 @@
       </button>
     </div>
   </div>
+  }
 </div>
