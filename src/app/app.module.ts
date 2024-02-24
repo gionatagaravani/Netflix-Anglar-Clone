@@ -12,13 +12,15 @@ import { environment } from './shared/config';
 import { BrowseComponent } from './components/browse/browse.component';
 import { NewComponent } from './components/browse/new/new.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ManageComponent } from './components/browse/manage/manage.component';
 @NgModule({
   declarations: [
     AppComponent,
     LandingpageComponent,
     LoginComponent,
     BrowseComponent,
-    NewComponent
+    NewComponent,
+    ManageComponent
   ],
   imports: [
     BrowserModule,

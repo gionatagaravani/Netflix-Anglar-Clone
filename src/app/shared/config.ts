@@ -1,5 +1,6 @@
 export const DB = {
   URL: 'https://netflix-angular-52ee4-default-rtdb.firebaseio.com/',
+  imgDefault: 'https://occ-0-4581-784.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABfjwXqIYd3kCEU6KWsiHSHvkft8VhZg0yyD50a_pHXku4dz9VgxWwfA2ontwogStpj1NE9NJMt7sCpSKFEY2zmgqqQfcw1FMWwB9.png?r=229'
 };
 
 export const environment = {

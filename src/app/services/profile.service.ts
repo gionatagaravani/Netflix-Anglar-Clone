@@ -1,7 +1,7 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Profile, ProfileData } from '../models/profile';
-import { Observable, map } from 'rxjs';
+import { BehaviorSubject, Observable, map } from 'rxjs';
 import { DB } from '../shared/config';
 import { AuthService } from './auth.service';
 import { User } from '../models/user';
@@ -10,9 +10,12 @@ import { User } from '../models/user';
   providedIn: 'root',
 })
 export class ProfileService {
-  user: User;
-  params = new HttpParams();
-  url: string;
+  private user: User;
+  private params = new HttpParams();
+  private url: string;
+
+  private profileSubject$ = new BehaviorSubject<ProfileData[] | undefined>(undefined);
+  profiles$ = this.profileSubject$.asObservable();
 
   constructor(
     private readonly http: HttpClient,
@@ -24,6 +27,7 @@ export class ProfileService {
       this.user.stsTokenManager.accessToken
     );
     this.url = DB.URL + this.user.uid;
+    this.getProfiles().subscribe((data) => this.profileSubject$.next(data))
   }
 
   getProfiles(): Observable<ProfileData[]> {
