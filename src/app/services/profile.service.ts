@@ -35,6 +35,9 @@ export class ProfileService {
   }
 
   private handleProfileData(data: any): ProfileData[] {
+    if (!data) {
+      return [];
+    }
     const pdata: ProfileData[] = []; 
     Object.keys(data).map(id => {
       pdata.push({id: id, data: data[id]})
