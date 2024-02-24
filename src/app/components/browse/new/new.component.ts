@@ -11,18 +11,26 @@ import { NgForm } from '@angular/forms';
 })
 export class NewComponent {
   loading = false;
+  valid = true;
   profile: Profile = { name: '', isChild: false };
 
   constructor(
     private readonly profileService: ProfileService,
     private readonly route: Router
-  ) {};
+  ) {}
 
   onSubmit(profile: NgForm) {
-    console.log('NewComponent  profile:', profile.valid)
     if (profile.valid) {
+      this.valid = true;
       this.loading = true;
-      // this.profileService.createProfile();  
+      this.profileService.createProfile(profile.value).subscribe(
+        () => {
+          this.route.navigate(['/browse']);
+        },
+        (err) => window.alert(err)
+      );
+    } else {
+      this.valid = false;
     }
   }
 }
