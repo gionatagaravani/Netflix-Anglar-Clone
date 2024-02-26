@@ -28,7 +28,7 @@ export class BrowseComponent implements OnInit, OnDestroy {
   }
 
   private subscribeProfiles() {
-    this.profileSubscription = this.profileService.profiles$.subscribe((p) => {
+    this.profileSubscription = this.profileService.getProfiles().subscribe((p) => {
       if (p) {
         this.initializeData(p);
       }
