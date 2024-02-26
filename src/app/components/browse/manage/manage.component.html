@@ -1,60 +1,86 @@
 <div class="flex items-center justify-center h-screen w-screen bg-neutral-900">
-    @if (profiles.length) {
-      <div
-      class="relative flex flex-col pt-32 lg:pt-24 xl:pt-20 text-center w-full h-3/5"
+  @if (profiles.length) {
+  <div
+    class="relative flex flex-col pt-32 lg:pt-24 xl:pt-20 text-center w-full h-3/5"
+  >
+    <div
+      class="text-white font-thin text-3xl lg:text-4xl xl:text-5xl xl:font-medium"
     >
-      <div
-        class="text-white font-thin text-3xl lg:text-4xl xl:text-5xl xl:font-medium"
-      >
-        Manage profiles
-      </div>
-      <div class="flex flex-row space-x-6 justify-center items-center mt-5">
-        @for (item of profiles; track $index) {
-          <a href="#" class="group">
-            <div
-              class="block max-w-sm group-hover:border-white group-hover:border-2 h-[84px] w-[84px] lg:h-28 lg:w-28 xl:h-36 xl:w-36 bg-center bg-cover rounded-md shadow group-hover:bg-gray-100"
-              [ngStyle]="{'background-image': 'url(' + item.image + ')'}"
-              ></div>
-            <div
-              class="text-xs lg:text-lg xl:text-xl pt-1 font-thin text-neutral-500 mt-2 group-hover:text-gray-100"
-            >
-              {{ item.name }}
-            </div>
-          </a>
-        }
-        <a routerLink="/new" class="group">
-          <div
-            class="flex justify-center items-center max-w-sm h-[84px] w-[84px] lg:h-28 lg:w-28 xl:h-36 xl:w-36 bg-transparent rounded-md shadow group-hover:bg-gray-100"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-16 h-16 lg:h-20 lg:w-20 xl:h-24 xl:w-24 text-neutral-500 mr-auto ml-auto"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <div
-            class="text-xs lg:text-lg xl:text-xl pt-1 font-thin text-neutral-500 mt-2 group-hover:text-gray-100"
-          >
-            Add new profile
-          </div>
-        </a>
-      </div>
-      <div class="flex justify-center items-center pt-14">
-        <button
-          type="button"
-          class="border border-neutral-500 hover:border-gray-100 hover:text-gray-100 font-thin text-neutral-500 text-sm lg:text-base bg-transparent py-1 px-4 lg:py-[6px] lg:px-5"
-        >
-          Manage profiles
-        </button>
-      </div>
+      Manage profiles
     </div>
-    }
+    <div
+      class="flex flex-row space-x-6 justify-center items-center pt-5 xl:pt-10"
+    >
+      @for (item of profiles; track $index) {
+      <a href="#" class="group">
+        <div
+          class="relative max-w-sm group-hover:border-white group-hover:border-[0.1px] h-[84px] w-[84px] lg:h-28 lg:w-28 xl:h-36 xl:w-36 bg-center bg-cover rounded-md shadow group-hover:bg-gray-100"
+        >
+          <img
+            [src]="item.image"
+            class="opacity-60 w-full h-full absolute object-cover rounded-md"
+          />
+          <div
+            class="relative flex justify-center items-center h-full w-full"
+          >
+            <div class="relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 lg:w-10 lg:h-10 font-extrabold text-white z-10"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-xs lg:text-lg xl:text-xl pt-1 font-thin text-neutral-500 mt-2 group-hover:text-gray-100"
+        >
+          {{ item.name }}
+        </div>
+      </a>
+      }
+      <a routerLink="/new" class="group">
+        <div
+          class="flex justify-center items-center max-w-sm h-[84px] w-[84px] lg:h-28 lg:w-28 xl:h-36 xl:w-36 bg-transparent rounded-md shadow group-hover:bg-gray-100"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-16 h-16 lg:h-20 lg:w-20 xl:h-24 xl:w-24 text-neutral-500 mr-auto ml-auto"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div
+          class="text-xs lg:text-lg xl:text-xl pt-1 font-thin text-neutral-500 mt-2 group-hover:text-gray-100"
+        >
+          Add new profile
+        </div>
+      </a>
+    </div>
+    <div class="flex justify-center items-center pt-14">
+      <button
+        type="button"
+        routerLink="/browse"
+        class="bg-white text-black hover:bg-[rgb(229,9,20)] hover:text-gray-100 text-sm lg:text-base py-1 px-4 lg:py-[6px] lg:px-5"
+      >
+        Finish
+      </button>
+    </div>
   </div>
-  
+  }
+</div>
