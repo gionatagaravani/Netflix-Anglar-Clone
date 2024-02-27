@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ProfileService } from '../../../services/profile.service';
 import { Profile } from '../../../models/profile';
+import { DB } from '../../../shared/config';
 
 @Component({
   selector: 'app-edit',
@@ -39,6 +40,7 @@ export class EditComponent implements OnInit, OnDestroy {
     this.profileSubscription = this.profileService.getProfile(id).subscribe((data) => {
       this.profile = data;
       this.profile.id = id;
+      this.profile.image = this.profile.image ?? DB.imgDefault;
     });
   }
 }
