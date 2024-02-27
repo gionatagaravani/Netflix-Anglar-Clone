@@ -13,6 +13,7 @@ import { BrowseComponent } from './components/browse/browse.component';
 import { NewComponent } from './components/browse/new/new.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ManageComponent } from './components/browse/manage/manage.component';
+import { EditComponent } from './components/browse/edit/edit.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { ManageComponent } from './components/browse/manage/manage.component';
     LoginComponent,
     BrowseComponent,
     NewComponent,
-    ManageComponent
+    ManageComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
